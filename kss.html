@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KK's Creation - Video Editing</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 30px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        /* DM text in red */
+        .dm-text {
+            text-align: center;
+            font-size: 24px;
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: flashText 1s infinite alternate;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+            animation: fadeInText 2s ease-out;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            animation: zoomIn 0.5s ease-in-out;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: #0066cc;
+            outline: none;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .submit-btn {
+            background-color: #0066cc;
+            color: white;
+            padding: 18px;
+            font-size: 20px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: bounceIn 1s ease-in-out;
+        }
+
+        .submit-btn:hover {
+            background-color: #004d99;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes flashText {
+            0% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KK's Creation - Video Editing</h1>
+        <p>Your Vision, Our Creativity!</p>
+    </header>
+
+    <!-- DM Text in Red with Flash Animation -->
+    <div class="dm-text">
+        <p>DM this number: <strong>7338099727, 7483819596</strong></p>
+    </div>
+
+    <div class="container">
+        <h2>Video Editing Request</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7a3a521c-8aa7-4c71-90fd-fbba49fc4f2b">
+            
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="videoType">Type of Video:</label>
+                <select id="videoType" name="videoType" required>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Corporate">Corporate</option>
+                    <option value="Music Video">Music Video</option>
+                    <option value="Event Highlights">Event Highlights</option>
+                    <option value="Travel Vlog">Travel Vlog</option>
+                    <option value="Tutorial">Tutorial</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Short Film">Short Film</option>
+                    <option value="Social Media Content">Social Media Content</option>
+                    <option value="Documentary">Documentary</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Information (Optional):</label>
+                <textarea id="message" name="message" placeholder="Provide any additional details about your video." ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Your Request</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 KK's Creation | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
